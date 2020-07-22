@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>HT_l7_form1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form action="handler.php">
+      <fieldset name="personalInformation">
+        <legend>
+          <p><b>Personal information</b></p>
+        </legend>
+        <p><b>*First name:</b> <input type="text" name="firstName" /></p>
+        <p>Middle name: <input type="text" name="secondName" /></p>
+        <p><b>*Last name:</b> <input type="text" name="lastName" /></p>
+      </fieldset>
+      <fieldset name="address">
+        <legend>
+          <p><b>Address</b></p>
+        </legend>
+        <p>Address: <input type="text" name="address" /></p>
+        <p>City or town: <input type="text" name="city" /></p>
+        <p>
+          State:
+          <select name="state">
+            <option selected disabled>Choose a state</option>
+            <option value="Kyiv">Kyiv</option>
+            <option value="Lviv">Lviv</option>
+          </select>
+        </p>
+        <p><b>*ZIP Code: </b><input type="phone" /></p>
+      </fieldset>
+    </form>
+  </body>
+</html>
+
