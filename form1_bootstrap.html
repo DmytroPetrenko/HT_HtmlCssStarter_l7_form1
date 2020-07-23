@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>form1_bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <style>
+      label.col-sm-2 {
+        text-align: right;
+      }
+      fieldset {
+        border-top: 1px solid #ddd !important;
+      }
+
+      legend {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: fit-content;
+        margin-left: 8% !important;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset name="personalInformation">
+        <legend>
+          <p><b>Personal information</b></p>
+        </legend>
+        <div class="form-group row">
+          <label for="inputFirstName" class="col-sm-2 col-form-label"
+            ><b>*First Name:</b></label
+          >
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputFirstName" />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputMiddleName" class="col-sm-2 col-form-label"
+            >Middle Name:</label
+          >
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputMiddleName" />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputLastName" class="col-sm-2 col-form-label"
+            ><b>*Last Name:</b></label
+          >
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputLastName" />
+          </div>
+        </div>
+      </fieldset>
+      <fieldset name="address">
+        <legend>
+          <p><b>Address</b></p>
+        </legend>
+        <div class="form-group row">
+          <label for="inputAddress" class="col-sm-2 col-form-label"
+            >Address:</label
+          >
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputAddress" />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputCity" class="col-sm-2 col-form-label"
+            >City or town:</label
+          >
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputCity" />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="selectState" class="col-sm-2 col-form-label">State</label>
+          <div class="col-sm-9">
+            <select class="custom-select" id="selectState" required>
+              <option selected disabled value="">Choose a state</option>
+              <option>Kyiv</option>
+              <option>Lviv</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputZip" class="col-sm-2 col-form-label">Zip</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="InputZip" required />
+            <div class="invalid-feedback">
+              Please provide a valid zip.
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
